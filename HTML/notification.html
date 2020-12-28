@@ -1,62 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>MIRT v0.0.1 | Notifications</title>
-        <link rel="stylesheet" href="../CSS/notification.css"/>
-        <script src="https://kit.fontawesome.com/4bcaf2a764.js"></script>
-        <script src="../JS/notification.js"></script>
-        <script src="../JS/showMenu.js"></script>
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8" />
+    <title>MIRT v0.0.1 | Notifications</title>
+    <link rel="stylesheet" href="../CSS/notification.css" />
+    <script src="https://kit.fontawesome.com/4bcaf2a764.js"></script>
+    <script src="../JS/notification.js"></script>
+    <script src="../JS/showMenu.js"></script>
+  </head>
+  <body>
+    <center>
+      <header>
         <center>
-        <header>
-            <center>
-                <div id="logo">
-                    <a href="../HTML/index.html"><p>MIRT</p>
-                        <div id="logoShapes">
-                            <div id="LS1"></div>
-                            <div id="LS2"></div>
-                            <div id="LS3"></div>
-                        </div>
-                    </a>
-                </div>
-            </center>
-        </header>
-            </center>
-        <div id="profile">
-            <a href="profile.html" id="username">username</a>
-            ||
-            <a href="login.html" id="logout">&nbsp;Logout</a>
-        </div>
-        <form id="search">
-            <input type="search" placeholder="Search" id="searchBox"/>
-            <input type="submit" value="Search" id="searchButton"/>
-        </form>
-        <div id="menu">
-            <i class="fas fa-bars" style="font-size:24px" id="menuBar" onclick="showMenu()"></i>
-            <div id="menuContents">
-                <a href="../HTML/index.html"><p>HOME</p></a>
-                <a href="../HTML/feed.html"><p>FEED</p></a>
-                <a href="../HTML/trending.html"><p>TRENDING</p></a>
-                <a href="../HTML/rant.html"><p>RANT</p></a>
-                <a href="../HTML/recommend.html"><p>RECOMMEND</p></a>
-                <a href="#"><p>MY RANTS</p></a>
-                <a href="#"><p>MY RECOMMENDMENTS</p></a>
-                <a href="#"><p>FOLLOWING</p></a>
-                <a href="#"><p>FOLLOWERS</p></a>
-                <a href="../HTML/settings.html"><p>SETTINGS</p></a>
-            </div>
-        </div>
-        <div id="notificationBell">
-            <a href="../HTML/notification.html" style="color:black">
-                <i class="fas fa-bell" style="font-size:24px" id=NotificationBellImg></i>
-                <div id="notificationAlertCon">
-                <center>
-                <span id="notificationAlert">0</span></center>
-            </div>
+          <div id="logo">
+            <a href="../HTML/index.html"
+              ><p>MIRT</p>
+              <div id="logoShapes">
+                <div id="LS1"></div>
+                <div id="LS2"></div>
+                <div id="LS3"></div>
+              </div>
             </a>
-            
+          </div>
+        </center>
+      </header>
+    </center>
+    <div id="profile">
+      <a href="settings.html" id="username">username</a>
+      ||
+      <a href="login.html" id="logout">&nbsp;Logout</a>
+    </div>
+    <form id="search">
+      <input type="search" placeholder="Search" id="searchBox" />
+      <input type="submit" value="Search" id="searchButton" />
+    </form>
+    <div id="menu">
+      <i
+        class="fas fa-bars"
+        style="font-size: 24px"
+        id="menuBar"
+        onclick="showMenu()"
+      ></i>
+      <div id="menuContents">
+        <a href="../HTML/index.html"><p>HOME</p></a>
+        <a href="../HTML/feed.html"><p>FEED</p></a>
+        <a href="../HTML/trending.html"><p>TRENDING</p></a>
+        <a href="../HTML/rant.html"><p>RANT</p></a>
+        <a href="../HTML/recommend.html"><p>RECOMMEND</p></a>
+        <a href="#"><p>MY RANTS</p></a>
+        <a href="#"><p>MY RECOMMENDMENTS</p></a>
+        <a href="#"><p>FOLLOWING</p></a>
+        <a href="#"><p>FOLLOWERS</p></a>
+        <a href="../HTML/settings.html"><p>SETTINGS</p></a>
+      </div>
+    </div>
+    <div id="notificationBell">
+      <a href="../HTML/notification.html" style="color: black">
+        <i
+          class="fas fa-bell"
+          style="font-size: 24px"
+          id="NotificationBellImg"
+        ></i>
+        <div id="notificationAlertCon">
+          <center>
+            <span id="notificationAlert">0</span>
+          </center>
         </div>
-    </body>
+      </a>
+    </div>
+  </body>
 </html>
