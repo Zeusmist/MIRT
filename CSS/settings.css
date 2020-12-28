@@ -1,0 +1,257 @@
+body
+{
+    margin: 0px;
+    background-color: whitesmoke;
+}
+header
+{
+    position: relative;
+    font-family:MV Boli;
+    font-size: 50px;
+    width: 128px;
+}
+#logo{position: relative;}
+#logo a{text-decoration: none; color: black}
+#logoShapes
+{
+    position: absolute;
+    width: 100%;
+    margin-top: -70px;
+}
+#LS1
+{
+    height: 4px;
+    width: 70%;
+    background-color: blue;
+    border-radius: 50px;
+    margin-bottom: 2px
+}
+#LS2
+{
+    height: 4px;
+    width: 50%;
+    background-color: red;
+    border-radius: 50px;
+    margin-bottom: 2px
+}
+#LS3
+{
+    height: 4px;
+    width: 30%;
+    background-color: orange;
+    border-radius: 50px;
+}
+#profile
+{
+    position: fixed;
+    top: 60px;
+    right: 40px;
+    font-family:HP Simplified;
+    font-size: 15px;
+/*    margin-left: -40px;*/
+}
+#profile a
+{
+    color: blue;
+    text-decoration: none;
+}
+#profile a:hover
+{
+    color: coral;
+    text-decoration: underline
+}
+#search
+{
+    position: fixed;
+    right: 35px;
+    top: 90px
+}
+#searchBox
+{
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border-top: 2px solid black;
+    border-right: 2px solid blue;
+    border-bottom: 2px solid red;
+    border-left: 2px solid orange;
+    padding-left: 15px;
+    padding-right: 75px;
+    font-family: HP Simplified;
+}
+#searchButton
+{
+    margin-left: -80px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+#searchButton:hover{background-color: lightgrey}
+#menuBar
+{
+/*    width: 50px;*/
+/*    height: 50px;*/
+    position: fixed;
+    left: 40px;
+    top: 60px;
+    transition-duration: 2s;
+    cursor: pointer;
+    z-index: 2;
+}
+#menuContents
+{
+    z-index: 2;
+    position: fixed;
+    top: 19px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: hp simplified;
+    width: 180px;
+    display: none;
+}
+#menuContents a
+{
+    border: 1px solid black;
+    text-decoration: none;
+    color: antiquewhite;
+    float: left;
+    width: 179px;
+    height: 30px;
+    position: relative;
+}
+#menuContents a:hover
+{
+    background-color: lightcoral;
+    width: 200px;
+    box-shadow: 0px 2px 2px black;
+}
+#menuContents a p
+{
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    padding-left: 5px;
+}
+#menuActive{background-color: royalblue; box-shadow: 0px 2px 2px black}
+#notificationBell, #notificationBell img
+{
+/*    width:30px;*/
+/*    height:30px;*/
+    position:fixed;
+    left: 40px;
+    top: 90px;
+    z-index: 1;
+    transition-duration: 2s;
+}
+#notificationAlertCon
+{
+    position: absolute;
+    z-index: 2;
+    border-radius: 100%;
+    width: 50%;
+    height: 15px;
+    background-color: red;
+    font-family: arial nova;
+    font-size: 12px;
+    top: -3px;
+    left: 50%;
+    color: white;
+    transition-duration: 2s;
+}
+section
+{
+    position: relative;
+    font-family: arial nova;
+}
+#settingsHead
+{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: slategray;
+}
+#displayPic
+{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    margin-left: 20px;
+    margin-top: 15px;
+    border-radius: 50%;
+/*
+    background-image: url(../IMAGES/AvUnisex.png);
+    background-repeat: no-repeat;
+*/
+    background-color: cornflowerblue;
+    border: 2px solid black;
+}
+#profileInfo
+{
+    position: absolute;
+    right: 50px
+}
+#profileInfo p
+{
+    float: left;
+    margin-right: 10px;
+}
+#statusQuote
+{
+    font-style: italic;
+    font-weight: 100;
+    font-size: 18px;
+    color: floralwhite;
+    position: relative;
+    top: 50px;
+}
+#activityCon
+{
+    width: 50%;
+    height: 100px;
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    border: 1px solid black;
+    background-color: cornsilk;
+    color: blue;
+}
+#activityCon a
+{
+    text-decoration: none;
+    color: darkblue;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 50px;
+    margin: 6%;
+    border-radius: 5px;
+    background-color: darkgrey;
+    padding: 8px 1px 
+}
+#activityCon a:hover
+{
+    padding: 11px 1px;
+    text-decoration: underline;
+    color: orangered;
+}
+#activityCon a span
+{
+    padding: 1%;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+}
+#settingsEdit
+{
+    margin-top: 55px;
+    width: 250px;
+    margin-left: 20px;
+}
+#settingsEdit a
+{
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: darkblue;
+}
+#settingsEdit a:hover{color: orangered;}

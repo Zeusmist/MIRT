@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>MIRT v0.0.1 | Feed</title>
+        <link rel="stylesheet" href="../CSS/feed.css"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no"/>
+        <script src="https://kit.fontawesome.com/4bcaf2a764.js"></script>
+<!--        <script src="../JS/feed.js"></script>-->
+    </head>
+    <body onload="adjust(); height(); showComment(); like(); mobile();">
+        <center>
+        <header>
+            <center>
+                <div id="logo">
+                    <a href="../HTML/index.html"><p>MIRT</p>
+                        <div id="logoShapes">
+                            <div id="LS1"></div>
+                            <div id="LS2"></div>
+                            <div id="LS3"></div>
+                        </div>
+                    </a>
+                </div>
+            </center>
+        </header>
+            </center>
+        <div id="profile">
+            <a href="profile.html" id="username">username</a>
+            ||
+            <a href="login.html" id="logout">&nbsp;Logout</a>
+        </div>
+        <div id="search">
+            <i class="fas fa-search" style="font-size:24px" id="searchButton" onclick="showSearch()"></i>
+            <form id="searchForm">
+                <input type="search" placeholder="Search" id="searchBox"/>
+                <input type="submit" value="Search" id="searchSubmit"/>
+            </form>
+        </div>
+        <div id="menu">
+            <i class="fas fa-bars" style="font-size:24px" id="menuBar" onclick="showMenu()"></i>
+            <div id="menuContents">
+                <a href="../HTML/index.html"><p>HOME</p></a>
+                <a id="menuActive"><p>FEED</p></a>
+                <a href="../HTML/trending.html"><p>TRENDING</p></a>
+                <a href="../HTML/rant.html"><p>RANT</p></a>
+                <a href="../HTML/recommend.html"><p>RECOMMEND</p></a>
+                <a href="#"><p>MY RANTS</p></a>
+                <a href="#"><p>MY RECOMMENDMENTS</p></a>
+                <a href="#"><p>FOLLOWING</p></a>
+                <a href="#"><p>FOLLOWERS</p></a>
+                <a href="../HTML/settings.html"><p>SETTINGS</p></a>
+            </div>
+        </div>
+        <div id="notificationBell">
+            <a href="../HTML/notification.html" style="color:black">
+                <i class="fas fa-bell" style="font-size:24px" id=NotificationBellImg></i>
+                <div id="notificationAlertCon">
+                    <center>
+                        <span id="notificationAlert">0</span>
+                    </center>
+                </div>
+            </a>
+        </div>
+        <section>
+            
+            <div class="feedbox">
+                <div class="feedboxContent">
+                    <a href="#"><img class="feedboxDP" src="../IMAGES/AvUnisex.png"/></a>
+                    <p class="feedboxTime">timetimetimet</p>
+                    <p class="feedboxUsername"><a href="#">username</a></p>
+                    <p class="feedboxTopic">TopicTopicTopic</p>
+                    <p class="feedboxText">TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText</p>
+                    <p class="feedboxTags">
+                        Tags: 
+                        <a class="feedboxTag1">Tag 1,</a>
+                        <a class="feedboxTag2">Tag 2,</a>
+                        <a class="feedboxTag3">Tag 3,</a>
+                        <a class="feedboxTag4">Tag 4,</a>
+                        <a class="feedboxTag5">Tag 5</a>
+                    </p>
+                </div>
+                <div class="feedboxImages">
+                    <a href="#"><div class="FBI1"><img src="../IMAGES/AvUnisex.png"/></div></a>
+                    <a href="#"><div class="FBI2"><img src="../IMAGES/menuBar.jpg"/></div></a>
+                    <a href="#"><div class="FBI3"><img src="../IMAGES/notificationBell.png"/></div></a>
+                </div>
+                <div class="feedboxActions">
+                    <div class="feedboxLike">
+                        <i class="fas fa-thumbs-up feedboxLikeImg" title="like" ></i>
+                        <span class="likeCounter">125B</span>
+                    </div>
+                    <div class="feedboxDislike">
+                        <i class="fas fa-thumbs-down feedboxDislikeImg" title="dislike"></i>
+                        <span class="dislikeCounter">125K</span>
+                    </div>
+                    <div class="feedboxComment">
+                        <i class="far fa-comment-dots feedboxCommentImg" title="comments" ></i>
+                        <span class="commentCounter">125B</span>
+                    </div>
+                </div>
+                <form class="feedboxEnterComment">
+                    <textarea placeholder="Enter comment" rows="2" class="feedboxEC" maxlength="203"></textarea>
+                    <input type="submit" value="comment" class="commentSubmit"/>
+                </form>
+                    <div class="feedboxCommentContents">
+                        <div class="FBC">
+                            <a href="#" class="commentUsername">username</a><br/>
+                            <div class="commentText">a comment would apperar here a comment would apperar here </div>
+                            <div class="commentActions">
+                                <div class="commentLike">
+                                    <i class="fas fa-thumbs-up commentLikeImg" title="like" ></i>
+                                    <span class="commentLikeCounter">125B</span>
+                                </div>
+                                <div class="commentDislike">
+                                    <i class="fas fa-thumbs-down commentDislikeImg" title="dislike"></i>
+                                    <span class="commentDislikeCounter">125K</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="FBC">
+                            <a href="#" class="commentUsername">usernameusernameuser</a><br/>
+                            <div class="commentText">a comment would apperar here a comment would apperar here </div>
+                            <div class="commentActions">
+                                <div class="commentLike">
+                                    <i class="fas fa-thumbs-up commentLikeImg" title="like" ></i>
+                                    <span class="commentLikeCounter">125B</span>
+                                </div>
+                                <div class="commentDislike">
+                                    <i class="fas fa-thumbs-down commentDislikeImg" title="dislike"></i>
+                                    <span class="commentDislikeCounter">125K</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="FBC">
+                            <a href="#" class="commentUsername">usernameusername</a><br/>
+                            <div class="commentText">a comment would apperar here a comment would apperar here a comment would apperar here a comment would apperar here a comment would apperar here a comment would apperar here a comment would apperar here </div>
+                            <div class="commentActions">
+                                <div class="commentLike">
+                                    <i class="fas fa-thumbs-up commentLikeImg" title="like" ></i>
+                                    <span class="commentLikeCounter">125B</span>
+                                </div>
+                                <div class="commentDislike">
+                                    <i class="fas fa-thumbs-down commentDislikeImg" title="dislike"></i>
+                                    <span class="commentDislikeCounter">125K</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <p class="moreComments">See more</p>
+                    </div>
+            </div>
+            <div class="feedbox">
+                <div class="feedboxContent">
+                    <a href="#"><img class="feedboxDP" src="../IMAGES/AvUnisex.png"/></a>
+                    <p class="feedboxTime">timetimetimet</p>
+                    <p class="feedboxUsername"><a href="#">usernameusernameuser</a></p>
+                    <p class="feedboxTopic">TopicTopicTopicTopicTopic</p>
+                    <p class="feedboxText">TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText</p>
+                    <p class="feedboxTags">
+                        Tags: 
+                        <a class="feedboxTag1">Tag 1,</a>
+                        <a class="feedboxTag2">Tag 2,</a>
+                        <a class="feedboxTag3">Tag 3,</a>
+                        <a class="feedboxTag4">Tag 4,</a>
+                        <a class="feedboxTag5">Tag 5</a>
+                    </p>
+                </div>
+                <div class="feedboxImages">
+                    <a href="#"><div class="FBI1"><img src="../IMAGES/AvUnisex.png"/></div></a>
+                    <a href="#"><div class="FBI2"><img src="../IMAGES/menuBar.jpg"/></div></a>
+                    <a href="#"><div class="FBI3"><img src="../IMAGES/notificationBell.png"/></div></a>
+                </div>
+                <div class="feedboxActions">
+                    <div class="feedboxLike">
+                        <i class="fas fa-thumbs-up feedboxLikeImg" title="like" ></i>
+                        <span class="likeCounter">125B</span>
+                    </div>
+                    <div class="feedboxDislike">
+                        <i class="fas fa-thumbs-down feedboxDislikeImg" title="dislike"></i>
+                        <span class="dislikeCounter">125K</span>
+                    </div>
+                    <div class="feedboxComment">
+                        <i class="far fa-comment-dots feedboxCommentImg" title="comments" ></i>
+                        <span class="commentCounter">125B</span>
+                    </div>
+                </div>
+                <form class="feedboxEnterComment">
+                    <textarea placeholder="Enter comment" rows="2" class="feedboxEC" maxlength="203"></textarea>
+                    <input type="submit" value="comment" class="commentSubmit"/>
+                </form>
+                    <div class="feedboxCommentContents">
+                        <div class="FBC">
+                            <a href="#" class="commentUsername">username</a><br/>
+                            <div class="commentText">a comment would apperar here a comment would apperar here a comment would apperar here a comment would apperar here a comment would apperar here a comment would apperar here a comment would apperar here </div>
+                            <div class="commentActions">
+                                <div class="commentLike">
+                                    <i class="fas fa-thumbs-up commentLikeImg" title="like" ></i>
+                                    <span class="commentLikeCounter">125B</span>
+                                </div>
+                                <div class="commentDislike">
+                                    <i class="fas fa-thumbs-down commentDislikeImg" title="dislike"></i>
+                                    <span class="commentDislikeCounter">125K</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="FBC">
+                            <a href="#" class="commentUsername">usernameusernameuser</a><br/>
+                            <div class="commentText">a comment would apperar here a comment would apperar here a comment would apperar here a comment would apperar here a comment would apperar here a comment would apperar here a comment would apperar here </div>
+                            <div class="commentActions">
+                                <div class="commentLike">
+                                    <i class="fas fa-thumbs-up commentLikeImg" title="like" ></i>
+                                    <span class="commentLikeCounter">125B</span>
+                                </div>
+                                <div class="commentDislike">
+                                    <i class="fas fa-thumbs-down commentDislikeImg" title="dislike"></i>
+                                    <span class="commentDislikeCounter">125K</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="FBC">
+                            <a href="#" class="commentUsername">usernameusername</a><br/>
+                            <div class="commentText">a comment would apperar here a comment would apperar here a comment would apperar here a comment would apperar here a comment would apperar here a comment would apperar here a comment would apperar here </div>
+                            <div class="commentActions">
+                                <div class="commentLike">
+                                    <i class="fas fa-thumbs-up commentLikeImg" title="like" ></i>
+                                    <span class="commentLikeCounter">125B</span>
+                                </div>
+                                <div class="commentDislike">
+                                    <i class="fas fa-thumbs-down commentDislikeImg" title="dislike"></i>
+                                    <span class="commentDislikeCounter">125K</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <p class="moreComments">See more</p>
+                    </div>
+            </div>
+            <div class="feedbox">
+                <div class="feedboxContent">
+                    <a href="#"><img class="feedboxDP" src="../IMAGES/AvUnisex.png"/></a>
+                    <p class="feedboxTime">timetimetimet</p>
+                    <p class="feedboxUsername"><a href="#">usernameuser</a></p>
+                    <p class="feedboxTopic">TopicTopicTopicTopicTopic</p>
+                    <p class="feedboxText">TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText</p>
+                    <p class="feedboxTags">
+                        Tags: 
+                        <a class="feedboxTag1">Tag 1,</a>
+                        <a class="feedboxTag2">Tag 2,</a>
+                        <a class="feedboxTag3">Tag 3,</a>
+                        <a class="feedboxTag4">Tag 4,</a>
+                        <a class="feedboxTag5">Tag 5</a>
+                    </p>
+                </div>
+                <div class="feedboxImages">
+                    <a href="#"><div class="FBI1"><img src="../IMAGES/AvUnisex.png"/></div></a>
+                    <a href="#"><div class="FBI2"><img src="../IMAGES/menuBar.jpg"/></div></a>
+                    <a href="#"><div class="FBI3"><img src="../IMAGES/notificationBell.png"/></div></a>
+                </div>
+                <div class="feedboxActions">
+                    <div class="feedboxLike">
+                        <i class="fas fa-thumbs-up feedboxLikeImg" title="like" ></i>
+                        <span class="likeCounter">125B</span>
+                    </div>
+                    <div class="feedboxDislike">
+                        <i class="fas fa-thumbs-down feedboxDislikeImg" title="dislike"></i>
+                        <span class="dislikeCounter">125K</span>
+                    </div>
+                    <div class="feedboxComment">
+                        <i class="far fa-comment-dots feedboxCommentImg" title="comments" ></i>
+                        <span class="commentCounter">125B</span>
+                    </div>
+                </div>
+                <form class="feedboxEnterComment">
+                    <textarea placeholder="Enter comment" rows="2" class="feedboxEC" maxlength="203"></textarea>
+                    <input type="submit" value="comment" class="commentSubmit"/>
+                </form>
+                    <div class="feedboxCommentContents">
+                        <div class="FBC">
+                            <a href="#" class="commentUsername">username</a><br/>
+                            <div class="commentText">a comment would apperar here a comment would apperar here</div>
+                            <div class="commentActions">
+                                <div class="commentLike">
+                                    <i class="fas fa-thumbs-up commentLikeImg" title="like" ></i>
+                                    <span class="commentLikeCounter">125B</span>
+                                </div>
+                                <div class="commentDislike">
+                                    <i class="fas fa-thumbs-down commentDislikeImg" title="dislike"></i>
+                                    <span class="commentDislikeCounter">125K</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="FBC">
+                            <a href="#" class="commentUsername">usernameusernameuser</a><br/>
+                            <div class="commentText">a comment would apperar here a comment would apperar here a comment would apperar here a comment would apperar here a comment would apperar here</div>
+                            <div class="commentActions">
+                                <div class="commentLike">
+                                    <i class="fas fa-thumbs-up commentLikeImg" title="like" ></i>
+                                    <span class="commentLikeCounter">125B</span>
+                                </div>
+                                <div class="commentDislike">
+                                    <i class="fas fa-thumbs-down commentDislikeImg" title="dislike"></i>
+                                    <span class="commentDislikeCounter">125K</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="FBC">
+                            <a href="#" class="commentUsername">usernameusername</a><br/>
+                            <div class="commentText"></div>
+                            <div class="commentActions">
+                                <div class="commentLike">
+                                    <i class="fas fa-thumbs-up commentLikeImg" title="like" ></i>
+                                    <span class="commentLikeCounter">0</span>
+                                </div>
+                                <div class="commentDislike">
+                                    <i class="fas fa-thumbs-down commentDislikeImg" title="dislike"></i>
+                                    <span class="commentDislikeCounter">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <p class="moreComments">See more</p>
+                    </div>
+            </div>
+            <div class="feedbox">
+                <div class="feedboxContent">
+                    <a href="#"><img class="feedboxDP" src="../IMAGES/AvUnisex.png"/></a>
+                    <p class="feedboxTime">timetimetimet</p>
+                    <p class="feedboxUsername"><a href="#">usernameuser</a></p>
+                    <p class="feedboxTopic">TopicTopicTopicTopicTopicTopicTopicTopicTopicTopic</p>
+                    <p class="feedboxText">tTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText</p>
+                    <p class="feedboxTags">
+                        Tags: 
+                        <a class="feedboxTag1">Tag 1,</a>
+                        <a class="feedboxTag2">Tag 2,</a>
+                        <a class="feedboxTag3">Tag 3,</a>
+                        <a class="feedboxTag4">Tag 4,</a>
+                        <a class="feedboxTag5">Tag 5</a>
+                    </p>
+                </div>
+                <div class="feedboxImages">
+                    <a href="#"><div class="FBI1"><img src="../IMAGES/AvUnisex.png"/></div></a>
+                    <a href="#"><div class="FBI2"><img src="../IMAGES/menuBar.jpg"/></div></a>
+                    <a href="#"><div class="FBI3"><img src="../IMAGES/notificationBell.png"/></div></a>
+                </div>
+                <div class="feedboxActions">
+                    <div class="feedboxLike">
+                        <i class="fas fa-thumbs-up feedboxLikeImg" title="like" ></i>
+                        <span class="likeCounter">125B</span>
+                    </div>
+                    <div class="feedboxDislike">
+                        <i class="fas fa-thumbs-down feedboxDislikeImg" title="dislike"></i>
+                        <span class="dislikeCounter">125K</span>
+                    </div>
+                    <div class="feedboxComment">
+                        <i class="far fa-comment-dots feedboxCommentImg" title="comments" ></i>
+                        <span class="commentCounter">125B</span>
+                    </div>
+                </div>
+                <form class="feedboxEnterComment">
+                    <textarea placeholder="Enter comment" rows="2" class="feedboxEC" maxlength="203"></textarea>
+                    <input type="submit" value="comment" class="commentSubmit"/>
+                </form>
+                    <div class="feedboxCommentContents">
+                        <div class="FBC">
+                            <a href="#" class="commentUsername">username</a><br/>
+                            <div class="commentText">a comment would apperar here a comment would apperar here</div>
+                            <div class="commentActions">
+                                <div class="commentLike">
+                                    <i class="fas fa-thumbs-up commentLikeImg" title="like" ></i>
+                                    <span class="commentLikeCounter">125B</span>
+                                </div>
+                                <div class="commentDislike">
+                                    <i class="fas fa-thumbs-down commentDislikeImg" title="dislike"></i>
+                                    <span class="commentDislikeCounter">125K</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="FBC">
+                            <a href="#" class="commentUsername">usernameusernameuser</a><br/>
+                            <div class="commentText">a comment would apperar here a comment would apperar here</div>
+                            <div class="commentActions">
+                                <div class="commentLike">
+                                    <i class="fas fa-thumbs-up commentLikeImg" title="like" ></i>
+                                    <span class="commentLikeCounter">125B</span>
+                                </div>
+                                <div class="commentDislike">
+                                    <i class="fas fa-thumbs-down commentDislikeImg" title="dislike"></i>
+                                    <span class="commentDislikeCounter">125K</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="FBC">
+                            <a href="#" class="commentUsername">usernameusername</a><br/>
+                            <div class="commentText">a comment would apperar here a comment would apperar here</div>
+                            <div class="commentActions">
+                                <div class="commentLike">
+                                    <i class="fas fa-thumbs-up commentLikeImg" title="like" ></i>
+                                    <span class="commentLikeCounter">125B</span>
+                                </div>
+                                <div class="commentDislike">
+                                    <i class="fas fa-thumbs-down commentDislikeImg" title="dislike"></i>
+                                    <span class="commentDislikeCounter">125K</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <p class="moreComments">See more</p>
+                    </div>
+            </div>
+        </section>
+    </body>
+    <script src="../JS/feed.js"></script>
+    <script src="../JS/showMenu.js"></script>
+</html>

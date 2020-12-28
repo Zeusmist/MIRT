@@ -1,0 +1,67 @@
+body
+{
+    margin: 0px;
+    background-color: whitesmoke;
+}
+header
+{
+    position: fixed;
+    top: 0px;
+    font-family:MV Boli;
+    font-size: 50px;
+    margin-left: 40px;
+}
+#logo{position: relative;}
+#logo a{text-decoration: none; color: black}
+#logoShapes
+{
+    position: absolute;
+    width: 100%;
+    margin-top: -70px;
+}
+#LS1
+{
+    height: 4px;
+    width: 70%;
+    background-color: blue;
+    border-radius: 50px;
+    margin-bottom: 2px
+}
+#LS2
+{
+    height: 4px;
+    width: 50%;
+    background-color: red;
+    border-radius: 50px;
+    margin-bottom: 2px
+}
+#LS3
+{
+    height: 4px;
+    width: 30%;
+    background-color: orange;
+    border-radius: 50px;
+}
+form
+{
+    position: relative;
+    
+    margin-top: 250px
+}
+form input
+{
+    width:300px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid lightgrey;
+    font-family: HP Simplified;
+    font-weight: 400;
+    padding: 0px 15px
+}
+form input[type="submit"]
+{
+    font-size: 15px;
+    background-color: dimgray;
+    width: 335px
+}

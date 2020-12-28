@@ -1,0 +1,480 @@
+body
+{
+    margin: 0px;
+    background-color: whitesmoke;
+}
+header
+{
+    position: relative;
+    font-family:MV Boli;
+    font-size: 50px;
+    width: 128px;
+}
+#logo{position: relative;}
+#logo a{text-decoration: none; color: black}
+#logoShapes
+{
+    position: absolute;
+    width: 100%;
+    margin-top: -70px;
+}
+#LS1
+{
+    height: 4px;
+    width: 70%;
+    background-color: blue;
+    border-radius: 50px;
+    margin-bottom: 2px
+}
+#LS2
+{
+    height: 4px;
+    width: 50%;
+    background-color: red;
+    border-radius: 50px;
+    margin-bottom: 2px
+}
+#LS3
+{
+    height: 4px;
+    width: 30%;
+    background-color: orange;
+    border-radius: 50px;
+}
+#profile
+{
+    position: fixed;
+    top: 60px;
+    right: 40px;
+    font-family:HP Simplified;
+    font-size: 15px;
+/*    margin-left: -40px;*/
+}
+#profile a
+{
+    color: blue;
+    text-decoration: none;
+}
+#profile a:hover
+{
+    color: coral;
+    text-decoration: underline
+}
+#search
+{
+    position: fixed;
+    right: 35px;
+    top: 90px
+}
+#searchButton
+{
+    position: fixed;
+    right: 35px;
+    display: none;
+}
+#searchBox
+{
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border-top: 2px solid black;
+    border-right: 2px solid blue;
+    border-bottom: 2px solid red;
+    border-left: 2px solid orange;
+    padding-left: 15px;
+    padding-right: 75px;
+    font-family: HP Simplified;
+/*    display: none;*/
+}
+#searchSubmit
+{
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    cursor: pointer;
+/*    display: none;*/
+}
+#searchSubmit:hover{background-color: lightgrey}
+#menuBar
+{
+/*    width: 50px;*/
+/*    height: 50px;*/
+    position: fixed;
+    left: 40px;
+    top: 60px;
+    transition-duration: 2s;
+    cursor: pointer;
+    z-index: 2;
+}
+#menuContents
+{
+    z-index: 2;
+    position: fixed;
+    top: 19px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: hp simplified;
+    width: 180px;
+    display: none;
+}
+#menuContents a
+{
+    border: 1px solid black;
+    text-decoration: none;
+    color: antiquewhite;
+    float: left;
+    width: 179px;
+    height: 30px;
+    position: relative;
+}
+#menuContents a:hover
+{
+    background-color: lightcoral;
+    width: 200px;
+    box-shadow: 0px 2px 2px black;
+}
+#menuContents a p
+{
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    padding-left: 5px;
+}
+#menuActive{background-color: royalblue; box-shadow: 0px 2px 2px black}
+#notificationBell, #notificationBell img
+{
+/*    width:30px;*/
+/*    height:30px;*/
+    position:fixed;
+    left: 40px;
+    top: 90px;
+    z-index: 1;
+    transition-duration: 2s;
+}
+#notificationAlertCon
+{
+    position: absolute;
+    z-index: 2;
+    border-radius: 100%;
+    width: 50%;
+    height: 15px;
+    background-color: red;
+    font-family: arial nova;
+    font-size: 12px;
+    top: -3px;
+    left: 50%;
+    color: white;
+    transition-duration: 2s;
+}
+section
+{
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.1);
+    position: relative;
+}
+.feedbox
+{
+    position: relative;
+    width: 100%;
+/*    height: auto;*/
+    background-color: pink;
+    margin-bottom: 30px;
+/*    height: 800px;*/
+    box-shadow: 0px 3px 10px dimgray;
+    transition-duration: 1s;
+}
+.feedboxContent
+{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-family: arial nova;
+    width: 50%;
+/*    height: inherit;*/
+}
+.feedboxDP
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    width: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 1px solid black;
+    float: left;
+}
+.feedboxTime
+{
+    position: absolute;
+    left: 60px;
+    height: 10px;
+    font-size: 10px;
+/*    border: 1px solid black;*/
+/*    top: 8px;*/
+    color: grey;
+    font-style: italic;
+}
+.feedboxUsername
+{
+    position: absolute;
+    left: 60px;
+    top: 9px;
+    height: 15px;
+/*    border: 1px solid black;*/
+    width: 165px;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+}
+.feedboxUsername a
+{
+    text-decoration: none;
+    color: blue;
+}
+.feedboxUsername a:hover{color: orange}
+.feedboxTopic
+{
+    position: absolute;
+    left: 60px;
+    top: 21px;
+    font-size: 20px;
+/*    text-align: center;*/
+/*    border: 1px solid black;*/
+    word-break: break-all;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.feedboxText
+{
+    position: absolute;
+    top: 57px;
+    left: 60px;
+    font-size: 15px;
+    word-break: break-all;
+/*    border: 1px solid black;*/
+}
+.feedboxTags
+{
+    position: absolute;
+    left: 60px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    color: dimgrey;
+    word-break: break-all;
+}
+.feedboxTags a
+{
+    text-decoration: underline;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.feedboxTags a:hover{color: darkslategray}
+.feedboxImages
+{
+    position: relative;
+    float: right;
+    right: 30px;
+    width: 380px;
+    height: 250px;
+    top: 10px;
+}
+.FBI1
+{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    float: left;
+    border: 1px solid black;
+}
+.FBI2
+{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 260px;
+    border: 1px solid black;
+}
+.FBI3
+{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 260px;
+    top: 130px;
+    border: 1px solid black;
+}
+.FBI1 img, .FBI2 img, .FBI3 img
+{
+/*    position: absolute;*/
+    width: 100%;
+    height: 100%;
+}
+.feedboxActions
+{
+    position: absolute;
+    left: 70px;
+/*    bottom: 410px*/
+}
+.feedboxLike
+{
+/*
+    position: absolute;
+    left: 70px;
+    bottom: 410px;
+*/
+    float: left;
+    margin-right: 40px
+}
+.likeCounter, .dislikeCounter , .commentLikeCounter, .commentDislikeCounter, .commentCounter, .commentCommentCounter
+{
+    position: absolute;
+    margin-left: 0px;
+    background-color: lightgrey;
+    font-size: 12px;
+    font-family: arial nova
+}
+.feedboxLikeImg, .feedboxDislikeImg, .commentLikeImg, .commentDislikeImg
+{
+    color: black;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.feedboxDislike
+{
+/*
+    position: absolute;
+    left: 130px;
+    bottom: 410px;
+*/
+    float: left;
+    margin-right: 40px;
+}
+.feedboxComment
+{
+/*
+    position: absolute;
+    left: 190px;
+    bottom: 410px;
+*/
+    float: left;
+    cursor: pointer
+}
+.feedboxEnterComment
+{
+    position: absolute;
+/*    bottom: 360px;*/
+    left: 70px;
+    width: 50%;
+}
+.feedboxEC
+{
+    width: 50%;
+    font-family: arial nova;
+}
+.commentSubmit
+{
+    position: absolute;
+    border-radius: 50px;
+    border: 1px solid grey;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.feedboxCommentContents
+{
+    position: absolute;
+/*    bottom: 10px;*/
+    width: 40%;
+    left: 70px;
+    font-family: arial nova;
+    font-size: 15px;
+    box-shadow: 0px 0px 10px dimgray;
+    border-radius: 5px;
+    display: none;
+}
+.commentUsername
+{
+    text-decoration: none;
+    color: blue;
+    font-weight: 600;
+    font-style: italic;
+    margin-left: 10px;
+    font-size: 14px
+}
+.commentUsername:hover{color: orange}
+.commentText
+{
+    margin-top: -2px;
+    font-size: 13px;
+    margin-left: 10px;
+}
+.commentLike
+{
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 47px;
+}
+.commentDislike
+{
+    margin-left: 70px;
+    margin-top: -18px;
+    width: 47px;
+}
+.moreComments
+{
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 100;
+    font-style: italic;
+    color: blue;
+    cursor: pointer;
+    width: 70px
+}
+.moreComments:hover{color: orange}
+
+@media (max-width:600px)
+{
+    #profile{display: none;}
+    #searchBox{display: none;}
+    #searchSubmit{display: none;}
+    #searchButton{display: block;}
+    
+    .feedboxContent
+    {
+        width: 100%;
+        left: 0px;
+    }
+    .feedboxTopic
+    {
+        margin-bottom: 5px
+    }
+    .feedboxText
+    {
+        left: 10px;
+    }
+    .feedboxTags
+    {
+        left: 10px;
+    }
+    .feedboxImages
+    {
+/*        display: none;*/
+    }
+    .feedboxActions
+    {
+        left: 10px;
+    }
+    .feedboxEnterComment
+    {
+        left: 10px;
+    }
+    .feedboxEC
+    {
+        width: auto;
+    }
+}
